@@ -1,0 +1,106 @@
+﻿@model AthleteDto
+@{
+}
+
+<div class="row">
+    <div class="col-md-8 mx-auto rounded border p-3">
+        <h2 class="text-center mb-5">Edit Athlete</h2>
+
+        <form method="post" enctype="multipart/form-data">
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Id</label>
+                <div class="col-sm-8">
+                    <input class="form-check-control-plaintext" readonly value="@ViewData["AthleteId"]">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Name</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="Name">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Points Per Game</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="PointsPerGame">
+                    <span asp-validation-for="PointsPerGame" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Rebounds Per Game</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="ReboundsPerGame">
+                    <span asp-validation-for="ReboundsPerGame" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Assists Per Game</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="AssistsPerGame">
+                    <span asp-validation-for="AssistsPerGame" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Field Goal Percentage</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="FieldGoalPercentage">
+                    <span asp-validation-for="FieldGoalPercentage" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Three Point Percentage</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="ThreePointPercentage">
+                    <span asp-validation-for="ThreePointPercentage" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Championships</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="Championships">
+                    <span asp-validation-for="Championships" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-4 col-sm-8">
+                    <img src="/products/@ViewData["ImageFileName"]" width="150">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Image</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="ImageFile">
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Created At</label>
+                <div class="col-sm-8">
+                    <input class="form-check-control-plaintext" readonly value="@ViewData["CreatedAt"]">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="offset-sm-4 col-sm-4 d-grid">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                <div class="col-sm-4 d-grid">
+                    <a class="btn btn-outline-primary" asp-controller="Athletes" asp-action="Index" role="button">
+                        Cancel
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
