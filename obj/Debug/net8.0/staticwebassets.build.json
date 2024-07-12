@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OllkWzPRs7bZM66hD4AWwd/fRfVoHocxpDxwYdSZzQk=",
+  "Hash": "/Zyg4jtOC/Rm8W6TTZm4zppvQs9yq6Umg3xiZbJyvMs=",
   "Source": "Athletes",
   "BasePath": "_content/Athletes",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\lebronjames.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\michaeljordan.jpg",
+      "SourceId": "Athletes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\",
+      "BasePath": "_content/Athletes",
+      "RelativePath": "images/michaeljordan.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\michaeljordan.jpg"
     },
     {
       "Identity": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\stephcurry.jpg",
