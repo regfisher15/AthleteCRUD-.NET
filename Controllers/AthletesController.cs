@@ -152,5 +152,28 @@ namespace Athletes.Controllers
 
             return RedirectToAction("Index", "Athletes");
         }
+
+        public IActionResult Delete(int id)
+        {
+            var athlete = context.Athletes.Find(id);
+            if (athlete == null)
+            {
+                return RedirectToAction("Index", "Athletes");
+            }
+
+            // the image file path
+            string imageFullPath = Path.Combine(environment.WebRootPath, "images", athlete.ImageFileName);
+
+            // Check if the file exists before attempting to delete it
+            if (System.IO.File.Exists(imageFullPath))
+            {
+                System.IO.File.Delete(imageFullPath);
+            }
+
+            context.Athletes.Remove(athlete);
+            context.SaveChanges(true);
+
+            return RedirectToAction("Index", "Athletes");
+        }
     }
 }
