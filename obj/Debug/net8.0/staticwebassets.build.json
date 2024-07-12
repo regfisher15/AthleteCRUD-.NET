@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IO3KCLmmb1bXYtOdGgl0lSuJzjtDtc/Q8NLc6FCSMz4=",
+  "Hash": "n4Qd5zXgTgCC4tofsUKfRd9Wanl2GlGAPpcJoB4OXK8=",
   "Source": "Athletes",
   "BasePath": "_content/Athletes",
   "Mode": "Default",
@@ -112,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\images\\20240712124033700.jpg"
     },
     {
-      "Identity": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\20240712203447521.jpg",
+      "Identity": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\20240712222622116.jpg",
       "SourceId": "Athletes",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\",
       "BasePath": "_content/Athletes",
-      "RelativePath": "images/20240712203447521.jpg",
+      "RelativePath": "images/20240712222622116.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\20240712203447521.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\20240712222622116.jpg"
     },
     {
       "Identity": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\kevindurant.jpg",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\kevindurant.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\kyrieirving.jpg",
+      "SourceId": "Athletes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\",
+      "BasePath": "_content/Athletes",
+      "RelativePath": "images/kyrieirving.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\kyrieirving.jpg"
     },
     {
       "Identity": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\lebronjames.jpg",
@@ -186,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\michaeljordan.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\nba_logo.png",
+      "SourceId": "Athletes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\",
+      "BasePath": "_content/Athletes",
+      "RelativePath": "images/nba_logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\nba_logo.png"
     },
     {
       "Identity": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\stephcurry.jpg",

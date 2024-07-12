@@ -3,6 +3,16 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to the NBA Athlete App</h1>
+    <p class="lead">Manage your favorite NBA players with ease!</p>
+    <p>This app allows you to add, remove, and update players in the database. Get started by exploring the features below:</p>
+
+    <div class="mt-4">
+        <a class="btn btn-primary btn-lg" asp-controller="Athletes" asp-action="Index">View Athletes</a>
+        <a class="btn btn-success btn-lg" asp-controller="Athletes" asp-action="Create">Add New Athlete</a>
+    </div>
+</div>
+
+<div class="text-center mt-5">
+    <img src="~/images/nba_logo.png" alt="NBA Logo" width="200" />
 </div>

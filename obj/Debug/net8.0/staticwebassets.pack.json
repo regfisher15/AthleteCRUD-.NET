@@ -17,12 +17,16 @@
       "PackagePath": "staticwebassets\\images\\20240712124033700.jpg"
     },
     {
-      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\20240712203447521.jpg",
-      "PackagePath": "staticwebassets\\images\\20240712203447521.jpg"
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\20240712222622116.jpg",
+      "PackagePath": "staticwebassets\\images\\20240712222622116.jpg"
     },
     {
       "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\kevindurant.jpg",
       "PackagePath": "staticwebassets\\images\\kevindurant.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\kyrieirving.jpg",
+      "PackagePath": "staticwebassets\\images\\kyrieirving.jpg"
     },
     {
       "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\lebronjames.jpg",
@@ -31,6 +35,10 @@
     {
       "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\michaeljordan.jpg",
       "PackagePath": "staticwebassets\\images\\michaeljordan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\nba_logo.png",
+      "PackagePath": "staticwebassets\\images\\nba_logo.png"
     },
     {
       "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\stephcurry.jpg",
