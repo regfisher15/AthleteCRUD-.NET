@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\kevindurant.jpg",
+      "PackagePath": "staticwebassets\\images\\kevindurant.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\lebronjames.jpg",
+      "PackagePath": "staticwebassets\\images\\lebronjames.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\stephcurry.jpg",
+      "PackagePath": "staticwebassets\\images\\stephcurry.jpg"
+    },
+    {
       "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

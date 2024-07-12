@@ -18,11 +18,11 @@ namespace Athletes.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    PointsPerGame = table.Column<decimal>(type: "decimal(16,2)", precision: 16, scale: 2, nullable: false),
-                    ReboundsPerGame = table.Column<decimal>(type: "decimal(16,2)", precision: 16, scale: 2, nullable: false),
-                    AssistsPerGame = table.Column<decimal>(type: "decimal(16,2)", precision: 16, scale: 2, nullable: false),
-                    FieldGoalPercentage = table.Column<decimal>(type: "decimal(16,2)", precision: 16, scale: 2, nullable: false),
-                    ThreePointPercentage = table.Column<decimal>(type: "decimal(16,2)", precision: 16, scale: 2, nullable: false),
+                    PointsPerGame = table.Column<decimal>(type: "decimal(16,1)", precision: 16, scale: 1, nullable: false),
+                    ReboundsPerGame = table.Column<decimal>(type: "decimal(16,1)", precision: 16, scale: 1, nullable: false),
+                    AssistsPerGame = table.Column<decimal>(type: "decimal(16,1)", precision: 16, scale: 1, nullable: false),
+                    FieldGoalPercentage = table.Column<decimal>(type: "decimal(16,1)", precision: 16, scale: 1, nullable: false),
+                    ThreePointPercentage = table.Column<decimal>(type: "decimal(16,1)", precision: 16, scale: 1, nullable: false),
                     Championships = table.Column<int>(type: "int", nullable: false),
                     ImageFileName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)

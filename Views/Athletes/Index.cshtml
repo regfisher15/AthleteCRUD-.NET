@@ -1,0 +1,56 @@
+﻿@model List<Athlete>
+@{
+}
+
+<h2 class="text-center mb-5">List of Athletes</h2>
+
+<div class="row mb-5">
+    <div class="col">
+        <a class="btn btn-primary" asp-controller="Athletes" asp-action="Create">New Athlete</a>
+    </div>
+    <div class="col">
+
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>PPG</th>
+            <th>RPG</th>
+            <th>APG</th>
+            <th>FG%</th>
+            <th>3P%</th>
+            <th>Championships</th>
+            <th>Image</th>
+            <th>Created At</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var athlete in Model)
+        {
+            <tr>
+                <td>@athlete.Id</td>
+                <td>@athlete.Name</td>
+                <td>@athlete.PointsPerGame</td>
+                <td>@athlete.ReboundsPerGame</td>
+                <td>@athlete.AssistsPerGame</td>
+                <td>@athlete.FieldGoalPercentage</td>
+                <td>@athlete.ThreePointPercentage</td>
+                <td>@athlete.Championships</td>
+                <td><img src="/images/@athlete.ImageFileName" width="100" /></td>
+                <td>@athlete.CreatedAt.ToString("MM/dd/yyyy")</td>
+                <td style="white-space:nowrap">
+                    <a class="btn btn-primary btn-sm" asp-controller="Athletes" asp-action="Edit"
+                        asp-route-id="@athlete.Id">Edit</a>
+                    <a class="btn btn-danger btn-sm" asp-controller="Athletes" asp-action="Delete"
+                        asp-route-id="@athlete.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
