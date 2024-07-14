@@ -22,5 +22,7 @@ namespace Athletes.Models
         [MaxLength(100)]
         public string ImageFileName { get; set; } = "";
         public DateTime CreatedAt { get; set; }
+
+        public string UserId { get; set; }  //userid so everyone has their own list
     }
 }

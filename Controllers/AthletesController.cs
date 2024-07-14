@@ -3,20 +3,31 @@ using Athletes.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http.Headers;
 
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
+
 namespace Athletes.Controllers
 {
+    [Authorize]
     public class AthletesController : Controller
     {
         private readonly ApplicationDbContext context;
         private readonly IWebHostEnvironment environment;
+        private readonly UserManager<IdentityUser> userManager;
 
-        public AthletesController(ApplicationDbContext context, IWebHostEnvironment environment) {
+        public AthletesController(ApplicationDbContext context, IWebHostEnvironment environment, UserManager<IdentityUser> userManager) {
             this.context = context;
             this.environment = environment;
+            this.userManager = userManager;
         }
         public IActionResult Index()
         {
-            var athletes = context.Athletes.OrderByDescending(p => p.Id).ToList();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);    
+            var athletes = context.Athletes
+                .Where(a => a.UserId == userId)
+                .OrderByDescending(p => p.Id)
+                .ToList();
             return View(athletes);
         }
 
@@ -48,6 +59,8 @@ namespace Athletes.Controllers
                 athleteDto.ImageFile.CopyTo(stream);
             }
 
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             // save the new athelte in the database
             Athlete athlete = new Athlete()
             {
@@ -59,7 +72,8 @@ namespace Athletes.Controllers
                 ThreePointPercentage = athleteDto.ThreePointPercentage,
                 Championships = athleteDto.Championships,
                 ImageFileName = newFileName,
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.Now,
+                UserId = userId
             };
 
             context.Athletes.Add(athlete);
@@ -101,9 +115,9 @@ namespace Athletes.Controllers
         {
             var athlete = context.Athletes.Find(id);
 
-            if (athlete == null)
+            if (athlete == null || athlete.UserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
             {
-                return RedirectToAction("Index", "Ahtletes");
+                return RedirectToAction("Index", "Athletes");
             }
 
             if (!ModelState.IsValid)
@@ -156,7 +170,7 @@ namespace Athletes.Controllers
         public IActionResult Delete(int id)
         {
             var athlete = context.Athletes.Find(id);
-            if (athlete == null)
+            if (athlete == null || athlete.UserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
             {
                 return RedirectToAction("Index", "Athletes");
             }
