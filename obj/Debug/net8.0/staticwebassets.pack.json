@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\images\\20240712222622116.jpg"
     },
     {
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\20240713204433932.jpg",
+      "PackagePath": "staticwebassets\\images\\20240713204433932.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\20240713205722143.jpg",
+      "PackagePath": "staticwebassets\\images\\20240713205722143.jpg"
+    },
+    {
       "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\kevindurant.jpg",
       "PackagePath": "staticwebassets\\images\\kevindurant.jpg"
     },
@@ -41,8 +49,20 @@
       "PackagePath": "staticwebassets\\images\\nba_logo.png"
     },
     {
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\nba_wallpaper.jpg",
+      "PackagePath": "staticwebassets\\images\\nba_wallpaper.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\nba_wallpaper2.jpg",
+      "PackagePath": "staticwebassets\\images\\nba_wallpaper2.jpg"
+    },
+    {
       "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\stephcurry.jpg",
       "PackagePath": "staticwebassets\\images\\stephcurry.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\images\\westbrook_gif.gif",
+      "PackagePath": "staticwebassets\\images\\westbrook_gif.gif"
     },
     {
       "Id": "C:\\Users\\rjfis\\source\\repos\\Athletes\\Athletes\\wwwroot\\js\\site.js",
